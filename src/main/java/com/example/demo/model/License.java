@@ -10,12 +10,14 @@ import javax.persistence.Table;
 @Table(name="licenses")
 public class License {
 	
+	
+	
 	@Override
 	public String toString() {
-		return "License [id=" + id + ", liscenseId=" + liscenseId + ", description=" + description + ", organisationId="
-				+ organisationId + ", productName=" + productName + ", liscenseType=" + liscenseType + "]";
+		return "License [liscenseId=" + liscenseId + ", description=" + description + ", organisationId="
+				+ organisationId + ", productName=" + productName + ", liscenseType=" + liscenseType + ", comment="
+				+ comment + "]";
 	}
-	
 	@Id
     @Column(name="license_id" ,nullable=false)
 	private String liscenseId;
